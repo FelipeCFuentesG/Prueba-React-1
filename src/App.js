@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MiApp from "./components/MiApi";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App" >
+      <header className="container">
+        <h1>Rick and Morty</h1>
       </header>
+      <main className="container bg-info form-control p-2"><MiApp /></main>
+      <footer className="container">
+        <h2>Prueba React 1 G24 </h2>
+      </footer>
+
     </div>
   );
 }
